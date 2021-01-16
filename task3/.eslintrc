@@ -1,0 +1,81 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    // note you must disable the base rule as it can report incorrect errors
+    "no-use-before-define": "off",
+
+    // Airbnb declaration
+    // Eslint declaration
+    "no-unused-vars": "off",
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all",
+        "ignoreReadBeforeAssign": true
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      }
+    ],
+    "arrow-body-style": ["error", "as-needed"],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTernary": true,
+        "allowShortCircuit": true
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true
+      }
+    ],
+    // Prettier declaration
+    "prettier/prettier": "error",
+    // Import declaration
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "import/newline-after-import": "error",
+    "import/imports-first": ["error", "absolute-first"],
+    "consistent-return": "off",
+    // React
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".jsx",".js"]
+      }
+    ],
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "warn",
+  }
+}

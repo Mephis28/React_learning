@@ -1,0 +1,256 @@
+body {
+  font-family: serif;
+}
+
+.App {
+  position: relative;
+  top: 0;
+  height: 1700px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #555555;
+}
+
+.header {
+  position: absolute;
+  top: 40px;
+  height: 290px;
+  width: 1150px;
+
+  background-color: #383838;
+}
+
+.headerBackGround {
+  position: absolute;
+  height: 290px;
+  width: 1150px;
+  background-image: url("files/pictures/posters.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.2;
+}
+
+.Main {
+  position: absolute;
+  top: 350px;
+  height: 1300px;
+  width: 1150px;
+  background-color: #232323;
+
+  color:#EAEAEA;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+.AddMovie {
+  position: absolute;
+  height: 15%;
+  width: 15%;
+  top: 5%;
+  right: 5%;
+
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+
+  color: #F65261;
+  background-color: #535353;
+
+  cursor: pointer;
+
+  opacity: 0.8;
+
+  font-family: sans-serif;
+  font-size: 1.2rem;
+
+  outline: none;
+}
+
+.Search {
+  position: absolute;
+  height: 17%;
+  width: 20%;
+  top: 45%;
+  right: 15%;
+
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+
+  color:#FEF8F8;
+  background-color: #F65261;
+
+  cursor: pointer;
+
+  font-family: sans-serif;
+  font-size: 1.2rem;
+
+  outline: none;
+}
+
+.Input {
+  position: absolute;
+  height: 17%;
+  width: 45%;
+  top: 45%;
+  right: 37%;
+
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+
+  color: #555555;
+  background-color: #1C1C1C;
+
+  font-family: sans-serif;
+  font-size: 1.2rem;
+
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+
+  width: 600px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-size: 1.2rem;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  /*background: green;*/
+}
+
+.sortBy {
+  position: absolute;
+  top: 20px;
+  right: 220px;
+  color: #787878;
+}
+
+.releaseDate {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+.moviesFoundNumber {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+
+  color:#FEF8F8;
+}
+
+.moviesFound {
+   position: absolute;
+   top: 80px;
+   left: 80px;
+}
+
+.moviesList {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  width: 1050px;
+  height: 1150px;
+}
+
+.movie {
+  position: relative;
+  height: 461px;
+  width: 320px;
+}
+
+.poster {
+  width: 320px;
+  height: 450px;
+}
+
+.dotsMenu{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background: #2A202D;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.dot {
+  background: #FFFFFF;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.subscribe {
+  position: absolute;
+  top: 471px;
+  width: 320px;
+}
+
+.movieName {
+  position: absolute;
+  left: 0;
+
+  font-size: 1.1rem;
+  color: #B2B2B2;
+}
+
+.movieGenre {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  font-size: 1.0rem;
+  color: #767676;
+}
+
+.movieYearRelease {
+  padding: 5px 10px 5px 10px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font-size: 1.0rem;
+  color: #9C9C9C;
+
+  border: #545454 1px solid;
+}
+
+
+
+
+
