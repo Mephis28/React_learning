@@ -30,6 +30,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "postcss": "^8.1.6",
     "prettier": "^2.1.2",
+    "prop-types": "^15.7.2",
     "terser-webpack-plugin": "latest",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1",

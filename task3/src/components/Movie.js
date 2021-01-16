@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import MoviePoster from "./MoviePoster";
 import MovieSubscribe from "./MovieSubscribe";
@@ -14,3 +15,12 @@ export default function Movie(props) {
     </div>
   );
 }
+
+Movie.propTypes = {
+  classCss: PropTypes.string,
+  source: PropTypes.string,
+  alt: PropTypes.string,
+  name: PropTypes.string,
+  genre: PropTypes.string,
+  year: PropTypes.string,
+};
