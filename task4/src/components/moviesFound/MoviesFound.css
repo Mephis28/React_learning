@@ -1,0 +1,13 @@
+.moviesFoundNumber {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+
+    color:#FEF8F8;
+}
+
+.moviesFound {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}

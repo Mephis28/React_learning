@@ -2,7 +2,7 @@ import React from "react";
 
 import AddMovie from "./AddMovie";
 import SearchButton from "./SearchButton";
-import SearchInput from "./SearchInput";
+import TextInput from "./common/TextInput";
 
 export default function Header() {
   return (
@@ -10,7 +10,7 @@ export default function Header() {
       <div className="headerBackGround" />
       <AddMovie />
       <SearchButton />
-      <SearchInput />
+      <TextInput />
     </header>
   );
 }

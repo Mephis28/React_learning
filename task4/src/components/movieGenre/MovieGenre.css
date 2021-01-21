@@ -1,0 +1,8 @@
+.movieGenre {
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+    font-size: 1.0rem;
+    color: #767676;
+}
