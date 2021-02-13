@@ -57,13 +57,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(sa|sc|c)ss$/,
-        exclude: /node_modules/,
+        test: /\.(sa|sc|c|le)ss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
           },
           "css-loader",
+          "less-loader",
         ],
       },
       {

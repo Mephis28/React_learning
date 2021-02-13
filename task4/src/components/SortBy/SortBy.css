@@ -1,0 +1,12 @@
+.sortBy {
+    position: absolute;
+    top: 20px;
+    right: 240px;
+    color: #787878;
+}
+
+.releaseDate {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
