@@ -1,0 +1,12 @@
+.movieYearRelease {
+    padding: 5px 10px 5px 10px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-size: 1.0rem;
+    color: #9C9C9C;
+
+    border: #545454 1px solid;
+}

@@ -1,0 +1,38 @@
+button.cancel {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.cancel .line1 {
+    width: 35px;
+    height: 3px;
+
+    background: #FFFFFF;
+
+    transform: rotate(45deg);
+}
+
+.cancel .line2 {
+    width: 35px;
+    height: 3px;
+
+    background: #FFFFFF;
+
+    transform: rotate(-45deg) translateY(-3px) translateX(2px);
+}

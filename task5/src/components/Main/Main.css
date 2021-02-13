@@ -1,0 +1,11 @@
+.Main {
+    position: absolute;
+    top: 350px;
+    height: 1300px;
+    width: 1150px;
+    background-color: #232323;
+
+    color:#EAEAEA;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}

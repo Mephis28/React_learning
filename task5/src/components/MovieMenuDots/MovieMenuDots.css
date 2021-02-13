@@ -1,0 +1,64 @@
+.dotsMenu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dotsMenuButton {
+    outline: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background: #232323;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border:none;
+}
+
+.dotsMenuButton:hover {
+    background-color: #424242;
+}
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+    background-color: #424242;
+    border-color: #424242;
+    box-shadow: none;
+}
+
+.btn-success:not(:disabled):not(.disabled).active:focus, .btn-success:not(:disabled):not(.disabled):active:focus, .show>.btn-success.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-success.focus, .btn-success:focus {
+    background-color: #222222;
+    border-color: #222222;
+    box-shadow: none;
+}
+
+.dotsMenuButton::after {
+    display: none;
+}
+
+.dot {
+    background: #FFFFFF;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.dropdown-menu.show {
+    background-color: #424242;
+}
+
+.dropdown-menu.show .dropdown-item{
+    color: #FFFFFF;
+}
+
+.dropdown-menu.show .dropdown-item:hover {
+    background-color: #f65261;
+}
