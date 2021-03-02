@@ -9,19 +9,24 @@ import { SortBy } from "../SortBy/SortBy";
 import MoviesFound from "../MoviesFound/MoviesFound";
 import { MoviesList } from "../MoviesList/MoviesList";
 
-export const Main = ({ onClickOpen }) => (
+export const Main = ({ onClickOpen, onClickOpenWindowInfoAbMovie }) => (
   <div className="Main">
     <Menu />
     <SortBy />
     <MoviesFound />
-    <MoviesList onClickOpen={onClickOpen} />
+    <MoviesList
+      onClickOpen={onClickOpen}
+      onClickOpenWindowInfoAbMovie={onClickOpenWindowInfoAbMovie}
+    />
   </div>
 );
 
 Main.propTypes = {
   onClickOpen: PropTypes.func,
+  onClickOpenWindowInfoAbMovie: PropTypes.func,
 };
 
 Main.defaultProps = {
   onClickOpen: noop,
+  onClickOpenWindowInfoAbMovie: noop,
 };

@@ -11,18 +11,17 @@ import { TextInput } from "../../Common/TextInput/TextInput";
 import { SelectDate } from "../../Common/SelectDate/SelectDate";
 import SelectGenre from "../../Common/SelectGenre/SelectGenre";
 
-export const EditMovie = ({ isOpenEditMovie, onClickCancel }) => {
+export const EditMovie = ({ isOpenEditMovie, onClickShut }) => {
   const trigger = isOpenEditMovie ? "open" : "shut";
   return (
     <Modal
       className="modal-window-edit-movie"
-      size="lg"
       show={isOpenEditMovie}
-      onHide={onClickCancel}
-      aria-labelledby="example-modal-sizes-title-lg"
+      onHide={onClickShut}
+      dialogClassName="modalWidth"
     >
       <div className={`editMovieWindow ${trigger}`}>
-        <Cancel onClick={onClickCancel} />
+        <Cancel onClick={onClickShut} />
         <h1>EDIT MOVIE</h1>
         <h2>
           MOVIE ID
@@ -87,10 +86,10 @@ export const EditMovie = ({ isOpenEditMovie, onClickCancel }) => {
 
 EditMovie.propTypes = {
   isOpenEditMovie: PropTypes.bool,
-  onClickCancel: PropTypes.func,
+  onClickShut: PropTypes.func,
 };
 
 EditMovie.defaultProps = {
   isOpenEditMovie: false,
-  onClickCancel: noop,
+  onClickShut: noop,
 };

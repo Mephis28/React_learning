@@ -1,9 +1,10 @@
 .Main {
-    position: absolute;
-    top: 350px;
+    position: relative;
+    margin-top: 20px;
+    /*top: 350px;*/
     height: 1300px;
     width: 1150px;
-    background-color: #232323;
+    background-color: #343434;
 
     color:#EAEAEA;
     font-size: 1.2rem;

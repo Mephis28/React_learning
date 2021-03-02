@@ -15,10 +15,17 @@ export const Movie = ({
   name,
   genre,
   year,
+  id,
   onClickOpen,
+  onClickOpenWindowInfoAbMovie,
 }) => (
   <div className="movie">
-    <MoviePoster source={source} alt={alt} />
+    <MoviePoster
+      source={source}
+      alt={alt}
+      id={id}
+      onClickOpenWindowInfoAbMovie={onClickOpenWindowInfoAbMovie}
+    />
     <MovieMenuDots onClickOpen={onClickOpen} />
     <MovieSubscribe name={name} genre={genre} year={year} />
   </div>
@@ -31,7 +38,9 @@ Movie.propTypes = {
   name: PropTypes.string,
   genre: PropTypes.string,
   year: PropTypes.string,
+  id: PropTypes.string,
   onClickOpen: PropTypes.func,
+  onClickOpenWindowInfoAbMovie: PropTypes.func,
 };
 
 Movie.defaultProps = {
@@ -41,5 +50,7 @@ Movie.defaultProps = {
   name: "",
   genre: "",
   year: "",
+  id: "",
   onClickOpen: noop,
+  onClickOpenWindowInfoAbMovie: noop,
 };

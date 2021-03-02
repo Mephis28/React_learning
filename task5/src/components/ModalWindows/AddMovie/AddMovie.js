@@ -10,16 +10,15 @@ import { TextInput } from "../../Common/TextInput/TextInput";
 import { SelectDate } from "../../Common/SelectDate/SelectDate";
 import SelectGenre from "../../Common/SelectGenre/SelectGenre";
 
-export const AddMovie = ({ isOpenAddMovie, onClickCancel }) => (
+export const AddMovie = ({ isOpenAddMovie, onClickShut }) => (
   <Modal
     className="modal-window-add-movie"
-    size="lg"
     show={isOpenAddMovie}
-    onHide={onClickCancel}
-    aria-labelledby="example-modal-sizes-title-lg"
+    onHide={onClickShut}
+    dialogClassName="modalWidth"
   >
     <div className="addMovieWindow">
-      <Cancel onClick={onClickCancel} />
+      <Cancel onClick={onClickShut} />
       <h1>ADD MOVIE</h1>
       <h2>
         TITLE
@@ -75,10 +74,10 @@ export const AddMovie = ({ isOpenAddMovie, onClickCancel }) => (
 
 AddMovie.propTypes = {
   isOpenAddMovie: PropTypes.bool,
-  onClickCancel: PropTypes.func,
+  onClickShut: PropTypes.func,
 };
 
 AddMovie.defaultProps = {
   isOpenAddMovie: false,
-  onClickCancel: noop,
+  onClickShut: noop,
 };

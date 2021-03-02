@@ -1,0 +1,125 @@
+.infoAbMovie {
+  position: relative;
+  margin-top: 40px;
+
+  height: 550px;
+  width: 1150px;
+
+  background: #232323;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  color: #FFFFFF;
+}
+
+.infoAbMovie.open {
+  display: flex;
+}
+
+.infoAbMovie.shut {
+  display: none;
+}
+
+.infoAbMovie_back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/pictures/posters.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.02;
+}
+
+.infoAbMovie_img {
+  position: relative;
+  height: 400px;
+  width: 285px;
+}
+
+.infoAbMovie_description {
+  position: relative;
+  height: 400px;
+  width: 750px;
+}
+
+.infoAbMovie_description_nameMovieAndRait {
+  position: relative;
+  height: 110px;
+  width: 750px;
+  display: flex;
+  align-items: center;
+
+  opacity: 0.8;
+}
+
+.infoAbMovie_description_nameMovieAndRait h1 {
+  position: relative;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.infoAbMovie_description_nameMovieAndRait--rait {
+  position: relative;
+  margin-left: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  border: #FFFFFF solid 0.5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #00db00;
+  font-size: 30px;
+  font-family: serif;
+}
+
+.infoAbMovie_description_nameMovieAndRait--oscarWin {
+  position: absolute;
+  top: 80px;
+}
+
+.infoAbMovie_description--yearDurationMovie {
+  position: relative;
+  margin-top: 20px;
+  height: 30px;
+  width: 300px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 30px;
+  font-family: serif;
+  font-weight: 100;
+  color: #f65261;
+}
+
+.infoAbMovie_description--yearDurationMovie p {
+  margin: 0 40px 0 0;
+  padding: 0;
+}
+
+.infoAbMovie_description--text {
+  position: relative;
+  margin-top: 20px;
+
+  width: 750px;
+  height: 100px;
+
+  word-wrap: break-word;
+}
+
+.infoAbMovie--searchIcon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transform: scale(2);
+  color: #f65261;
+  cursor: pointer;
+}
