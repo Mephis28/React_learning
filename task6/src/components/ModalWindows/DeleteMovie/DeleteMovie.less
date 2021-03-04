@@ -1,0 +1,74 @@
+.modal-window-delete-movie {
+  .modalWidth {
+    width: 530px;
+    max-width: none !important;
+  }
+
+  .deleteMovieWindow {
+    height: 280px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: #232323;
+    color: #FFFFFF;
+    font-family: sans-serif;
+
+    z-index: 999;
+  }
+
+  .deleteMovieWindow.open {
+    visibility: visible;
+  }
+
+  .deleteMovieWindow.shut {
+    visibility: hidden;
+  }
+
+  .deleteMovieWindow_h1 {
+    position: absolute;
+
+    top: 60px;
+    left: 20px;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .deleteMovieWindow_p {
+    position: absolute;
+
+    top: 120px;
+    left: 20px;
+
+
+    padding: 0;
+    margin: 0;
+
+    font-weight: 700;
+  }
+
+  .deleteMovieWindow_button {
+    position: absolute;
+
+    right: 50px;
+    bottom: 50px;
+
+    padding: 0;
+    margin: 0;
+
+    height: 50px;
+    width: 130px;
+
+    background: #f65261;
+    color: #FFFFFF;
+
+    outline: none;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+  }
+}

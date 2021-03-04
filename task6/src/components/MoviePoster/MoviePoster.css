@@ -1,0 +1,18 @@
+button.moviePoster{
+    padding: 0;
+    margin: 0;
+
+    width: 320px;
+    height: 450px;
+
+    background: transparent;
+    outline: none;
+}
+
+.moviePoster_img {
+    padding: 0;
+    margin: 0;
+
+    width: 320px;
+    height: 450px;
+}

@@ -1,0 +1,112 @@
+.react-datepicker {
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+}
+
+.react-datepicker-wrapper {
+    margin-top: 10px;
+}
+
+.react-datepicker__input-container input {
+    height: 50px;
+    width: 500px;
+
+    color: #FFFFFF;
+    background-color: #2E2E2E;
+
+    outline: none;
+    border: none;
+
+    padding-left: 10px;
+
+    font-family: serif;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+}
+
+.react-datepicker__month-container {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+
+    border: none;
+    outline: none;
+}
+
+.react-datepicker__month-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+}
+
+.react-datepicker__month.react-datepicker__monthPicker {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+
+    color: #FFFFFF;
+    background-color: #232323;
+
+    border: none;
+    outline: none;
+}
+
+.react-datepicker__month.react-datepicker__monthPicker .react-datepicker__month-wrapper div {
+    width: 32%;
+    font-family: serif;
+    font-size: 1.4rem;
+    color:  #FFFFFF;
+    letter-spacing: 1.5px;
+}
+
+.react-datepicker__month.react-datepicker__monthPicker .react-datepicker__month-wrapper div:hover {
+    background-color: #F65261;
+}
+
+.react-datepicker__month-text--keyboard-selected{
+    background-color: #F65261;
+}
+
+.react-datepicker__triangle {
+    visibility: hidden;
+}
+
+.react-datepicker__header.react-datepicker-year-header {
+    padding: 0;
+    margin: 0;
+    height: 31px;
+
+    background-color: #232323;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-family: Serif;
+    letter-spacing: 1.5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border: #F65261 2px solid;
+}
+
+.react-datepicker button[aria-label] {
+    padding: 0;
+    margin: 0;
+    top: 8px;
+
+    height: 15px;
+    transform: scale(1.2);
+
+    outline: none;
+}
+
+.react-datepicker__navigation.react-datepicker__navigation--previous {
+    border-right-color: #F65261;
+}
+
+.react-datepicker__navigation.react-datepicker__navigation--next {
+    border-left-color: #F65261;
+}

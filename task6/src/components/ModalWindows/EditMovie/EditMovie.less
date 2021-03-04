@@ -1,0 +1,118 @@
+.modal-window-edit-movie {
+  .modalWidth {
+    width: 700px;
+    max-width: none !important;
+  }
+
+  .editMovieWindow {
+    height: 1000px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: #232323;
+    color: red;
+    font-family: sans-serif;
+    font-weight: 100;
+
+    z-index: 999;
+  }
+
+  .editMovieWindow.open {
+    visibility: visible;
+  }
+
+  .editMovieWindow.shut {
+    visibility: hidden;
+  }
+
+  .editMovieWindow h1 {
+    margin: 0;
+    padding: 0;
+
+    margin-top: 50px;
+    margin-left: 100px;
+
+    color: #ededed;
+    font-weight: 100;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+  }
+
+  .editMovieWindow h2 {
+    margin: 0;
+    padding: 0;
+
+    margin-left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    color: #b7444f;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .buttons {
+    position: relative;
+    height: 150px;
+    align-content: center;
+  }
+
+  .buttons .submit {
+    position: absolute;
+    top: 50%;
+    right: 110px;
+    transform: translate(0, -50%);
+
+    height: 55px;
+    width: 181px;
+
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+
+    color: #fef8f8;
+    background-color: #f65261;
+
+    cursor: pointer;
+
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+    outline: none;
+  }
+
+  .buttons .reset {
+    position: absolute;
+    top: 50%;
+    right: 311px;
+    transform: translate(0, -50%);
+
+    height: 55px;
+    width: 181px;
+
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+
+    color: #f65261;
+    background-color: transparent;
+    border: #f65261 solid 2px;
+
+    cursor: pointer;
+
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+    outline: none;
+  }
+}
